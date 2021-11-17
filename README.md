@@ -1,3 +1,10 @@
+#  Machine configuration. 
+
+Experiments were conducted on two servers and a Jetson TX2 development kit, all running Ubuntu 16.04. One server was equipped with two different NVIDIA GPUs: GeForce GTX 1080 Ti (11 GB device memory) and RTX 2080 Ti (11 GB) and the other server was with 4 NVIDIA Tesla V100 GPUs (32 GB). Both servers had dual 18-core Intel Xeon processors and over 250GB memory. The CPU and memory performance of the servers is comparable. Jetson TX2 is an embedded computing board with a quad-core ARM Cortex-A57, a 256-core Pascal GPU, and 8GB memory shared between the CPU and GPU.
+
+We implemented SwitchFlow on TensorFlow and used variants of TF with the same version for comparison. 
+The CUDA version was v10.0 and the machine learning library used was cuDNN v7.6.4.
+
 # Getting Started
 
 # System requirement
