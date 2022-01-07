@@ -11,8 +11,8 @@ The CUDA version was v10.0 and the machine learning library used was cuDNN v7.6.
 - anaconda
 - python 3.6
 
-More details about dependency can be found on the page of TF Build from source: https://www.tensorflow.org/install/source.
-The project is based on the TensorFlow 1.13.(https://github.com/shizukanaskytree/tensorflow)
+* More details about dependency can be found on the page of TF Build from source: https://www.tensorflow.org/install/source.
+* The project is based on the TensorFlow 1.13: https://github.com/shizukanaskytree/tensorflow
 
 # Experiment in Figure 2
 
