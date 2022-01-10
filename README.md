@@ -135,3 +135,25 @@ To reproduce the experiment in Figure 8, 9 10, checkout to
 (https://github.com/shizukanaskytree/tensorflow/tree/7756874638567e7b333d66e4ae9ed73c4e23689f), and build by following the commands above.
 
 Benchmark code of Figure 8, 9, 10 are in [benchmarks/reuse_inputs](benchmarks/reuse_inputs).
+
+Thank you for reading!
+
+```
+@inproceedings{10.1145/3464298.3493391,
+author = {Wu, Xiaofeng and Rao, Jia and Chen, Wei and Huang, Hang and Ding, Chris and Huang, Heng},
+title = {SwitchFlow: Preemptive Multitasking for Deep Learning},
+year = {2021},
+isbn = {9781450385343},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3464298.3493391},
+doi = {10.1145/3464298.3493391},
+abstract = {Accelerators, such as GPU, are a scarce resource in deep learning (DL). Effectively and efficiently sharing GPU leads to improved hardware utilization as well as user experiences, who may need to wait for hours to access GPU before a long training job is done. Spatial and temporal multitasking on GPU have been studied in the literature, but popular deep learning frameworks, such as Tensor-Flow and PyTorch, lack the support of GPU sharing among multiple DL models, which are typically represented as computation graphs, heavily optimized by underlying DL libraries, and run on a complex pipeline spanning CPU and GPU. Our study shows that GPU kernels, spawned from computation graphs, can barely execute simultaneously on a single GPU and time slicing may lead to low GPU utilization.This paper presents SwitchFlow, a scheduling framework for DL multitasking. It centers on two designs. First, instead of scheduling a computation graph as a whole, SwitchFlow schedules its subgraphs and prevents subgraphs from different models to run simultaneously on a GPU. This results in less interference and the elimination of out-of-memory errors. Moreover, subgraphs running on different devices can overlap with each other, leading to a more efficient execution pipeline. Second, SwitchFlow maintains multiple versions of each subgraph. This allows subgraphs to be migrated across devices at a low cost, thereby enabling low-latency preemption. Results on representative DL models show that SwitchFlow achieves up to an order of magnitude lower tail latency for inference requests collocated with a training job.},
+booktitle = {Proceedings of the 22nd International Middleware Conference},
+pages = {146–158},
+numpages = {13},
+keywords = {deep learning framework, preemption scheduling, systems for machine learning},
+location = {Qu\'{e}bec city, Canada},
+series = {Middleware '21}
+}
+```
